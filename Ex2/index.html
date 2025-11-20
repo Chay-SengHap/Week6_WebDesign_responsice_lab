@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+            padding: 1rem;
+            background-color: black;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav{
+            display: flex;
+            gap: 3rem;
+        }
+        @media (max-width: 767px){
+            .navigation{
+                display: none;
+            }
+            .hamburger{
+                display: block;
+            }
+
+        }
+        @media (min-width: 768px){
+            .navigation{
+                display: block;
+                display: flex;
+                gap: 3rem ;
+            }
+            .hamburger{
+                display: none;
+            }
+
+        }
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div >
+            <p>Logo</p>
+        </div>
+        <div class="nav">
+            <div class="nav navigation">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="hamburger nav">
+                <i class="fas fa-bars"></i> 
+            </div>
+        </div>
+    </header>
+</body>
+</html>

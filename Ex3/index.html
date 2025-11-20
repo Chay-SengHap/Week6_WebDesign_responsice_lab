@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 1rem;
+        }
+        
+        .header , .footer{
+            background-color: black;
+            color : white;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding : 10px;
+        }
+        .hero{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 0.5rem;
+        }
+        .hero div{
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 3rem;
+            padding: 10px;
+            
+        }
+        @media (min-width : 600px) {
+            .hero{
+                grid-template-columns: 1fr 1fr;
+            }
+        }@media (min-width : 901px){
+            .hero{
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="header">
+            Responsive Header
+        </div>
+        <div class="hero">
+            <div style="background-color: rgb(211, 209, 209);">Main Content</div>
+            <div style="background-color: gray;">Sidebar</div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+
+    </div>
+
+
+</body>
+</html>
